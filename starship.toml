@@ -1,0 +1,29 @@
+# Meslo Nerd Fonts
+add_newline = false
+format = "[](blue)[ ](bg:blue fg:black)$username$hostname[](bg:purple fg:blue)$directory[](purple) \n$character\n"
+
+[character]
+error_symbol = "[](bold red)"
+success_symbol = "[](bold green)"
+
+[directory]
+format = "[$path]($style)"
+style = "bg:purple fg:black"
+truncate_to_repo = false
+
+[directory.substitutions]
+Documents = "📄 "
+Downloads = "📥 "
+Music = "🎜 "
+Pictures = "📷 "
+
+[hostname]
+disabled = false
+format = "[ 🌏 ](bg:blue fg:white)[$hostname](bg:blue fg:white)"
+ssh_only = true
+
+[username]
+format = "[$user]($style)"
+show_always = true
+style_root = "bg:blue fg:red"
+style_user = "bg:blue fg:black"
